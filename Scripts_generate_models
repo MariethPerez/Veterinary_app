@@ -1,0 +1,10 @@
+rails generate model Owner name_owner:string birthdate:date
+
+rails generate model Pet name_pet:string description:text age:integer owner:references
+
+rails generate model Ticket pet:references
+
+rails generate model Service description:text price:integer
+
+rails g migration CreateJoinTableTicketService ticket service
+
